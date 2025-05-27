@@ -21,12 +21,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\title[底部简明标题]{
-    开放量子体系理论
+\title[基于生成式先验的肖像视频编辑系统的设计与实现]{
+    基于生成式先验的肖像视频编辑系统的设计与实现
 }
-\author[底部演讲者]{报告人：XXX}
+\author[汪兆辰]{报告人：汪兆辰\\指导教师：张举勇教授}
 \institute[USTC]{
-中国科学技术大学，近代物理系
+数学科学学院·计算与应用数学系
 }
 \date{\today}
 \begin{document}
@@ -42,7 +42,7 @@
 %--------------------
 %beamer 101
 \begin{frame}%
-	\frametitle{大纲}%
+	\frametitle{目录}%
 	\tableofcontents[hideallsubsections]%仅显示节
 	%\tableofcontents%显示所节和子节
 \end{frame}%
@@ -52,7 +52,7 @@
 \AtBeginSection[]{
 \setbeamertemplate{footline}[footlineoff]%取消页脚
   \begin{frame}%
-    \frametitle{大纲}
+    \frametitle{目录}
 	%\tableofcontents[currentsection,subsectionstyle=show/hide/hide]%高亮当前节，不显示子节
     \tableofcontents[currentsection,subsectionstyle=show/show/hide]%show,shaded,hide
   \end{frame}
@@ -64,53 +64,49 @@
 \AtBeginSubsection[]{
 \setbeamertemplate{footline}[footlineoff]%取消页脚
   \begin{frame}%
-    \frametitle{大纲}
+    \frametitle{目录}
 	%\tableofcontents[currentsection,subsectionstyle=show/hide/hide]%高亮当前节，不显示子节
     \tableofcontents[currentsection,subsectionstyle=show/shaded/hide]%show,shaded,hide
   \end{frame}
 \setbeamertemplate{footline}[footlineon]%添加页脚
 }
 
-\section{研究背景}
+\section{研究背景与意义}
 \begin{frame}
   \frametitle{研究背景}
-  研究背景：
   \begin{itemize}
-    \item 一
-    \item 二
-    \item 三
+    \item \textbf{行业需求：}
+    \begin{itemize}
+      \item 中国网络视听用户规模已达 10.91 亿，其中短视频用户规模突破 10.40 亿，日均使用时长高达 156 分钟；
+      \item 我国网络直播用户规模达 8.33 亿，同比增长1737 万；
+      \item 2024 年全国网上零售额达 15.23 万亿元，同比增长 7.2\%，其中近一半的消费行为直接由短视频或直播内容触发。
+    \end{itemize}
+    \item \textbf{技术挑战：}
+    \begin{itemize}
+      \item 传统的基于2D先验的编辑方法无法满足视频多样化编辑的需求；
+      \item 现有先进编辑技术的应用门槛较高，普通用户难以直接使用；
+      \item 研究者难以获得用户的实际需求，造成技术演进与市场需求的脱节。
+    \end{itemize}
+  \end{itemize}
+\end{frame} 
+
+\begin{frame}
+  \frametitle{研究意义}
+  \begin{itemize}
+    \item 我们基于PortraitGen算法，构建了一套完整的智能视频编辑系统，设计了直观的用户界面与用户工作流，使用户
+    无需关注算法细节，只需给出算法输入便可实现多种编辑功能。
+    \item 另外我们搭建了管理员系统，使研究者可以监控用户反馈和操作日志，从而了解用户需求。
+    \item 我们在构建系统时保持了可扩展性，为搭载多种算法提供可能。
   \end{itemize}
 
 \end{frame}
 
-
-\section{理论模型}
-\subsection{模型1}
+\section{相关技术与工作}
+\subsection{PortritGen技术创新}
 \begin{frame}
-  \frametitle{理论模型1}
-  考虑开放系统主方程
-  \begin{equation*}
-    \frac{d\rho}{d t}=-i \left[H,\rho\right]+\kappa\left(2a\rho a^{\dagger}-a^{\dagger}a\rho-\rho a^{\dagger}a\right)
-  \end{equation*}
-  \pause
-  由此得到……
-
-\end{frame}
-\subsection{模型2}
-\begin{frame}
-  \frametitle{理论模型2}
-  近似条件
-  \begin{equation*}
-    \rho\left(t\right)\approx\rho_{\rm S}\left(t\right)\otimes\rho_{\rm B}
-  \end{equation*}
-  \pause
-  于是……
-  \begin{equation*}
-    \frac{d\rho}{d t}=\cdots
-  \end{equation*}
+  \frametitle{PortraitGen技术创新}
   
 \end{frame}
-
 
 \section{研究方法}
 
