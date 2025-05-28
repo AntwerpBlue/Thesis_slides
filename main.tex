@@ -104,8 +104,35 @@
 \section{相关技术与工作}
 \subsection{PortritGen技术创新}
 \begin{frame}
-  \frametitle{PortraitGen技术创新}
-  
+  \frametitle{PortritGen技术创新}
+  我们使用的PortraitGen算法将肖像表示提升至3D以保持生成视频帧间的一致性，其主要技术创新在于：
+  \begin{itemize}
+    \item 通过3DGS来表示肖像，提高模型表示能力；
+    \item 使用可学习的特征代替球谐系数，实现更精细的艺术细节；
+    \item 利用表情一致性保持策略，增强面对复杂问题的稳定性。
+  \end{itemize}
+  \begin{figure}
+    \includegraphics[width=0.5\textwidth]{source/portraitgen.png}
+  \end{figure}
+\end{frame}
+
+\subsection{系统开发技术}
+\begin{frame}
+  \frametitle{系统开发技术}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      我们采用前后端分离的分层微服务架构搭建系统：
+      \begin{itemize}
+        \item 使用基于React的Next.js作为前端开发框架，并选择Typescript以引入类型检查与对象特性；
+        \item 后端API使用Flask框架以适配算法并提供可扩展的微服务；
+        \item 数据层采用MySQL存储数据，Redis实现任务队列管理。
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.9\textwidth]{source/system_structure.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \section{研究方法}
