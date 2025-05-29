@@ -102,7 +102,7 @@
 \end{frame}
 
 \section{相关技术与工作}
-\subsection{PortritGen技术创新}
+
 \begin{frame}
   \frametitle{PortritGen技术创新}
   我们使用的PortraitGen算法将肖像表示提升至3D以保持生成视频帧间的一致性，其主要技术创新在于：
@@ -116,16 +116,16 @@
   \end{figure}
 \end{frame}
 
-\subsection{系统开发技术}
 \begin{frame}
   \frametitle{系统开发技术}
+  我们采用前后端分离的分层微服务架构搭建系统：
   \begin{columns}
     \begin{column}{0.4\textwidth}
-      我们采用前后端分离的分层微服务架构搭建系统：
       \begin{itemize}
         \item 使用基于React的Next.js作为前端开发框架，并选择Typescript以引入类型检查与对象特性；
         \item 后端API使用Flask框架以适配算法并提供可扩展的微服务；
         \item 数据层采用MySQL存储数据，Redis实现任务队列管理。
+      \end{itemize}
     \end{column}
     \begin{column}{0.6\textwidth}
       \begin{figure}
@@ -135,23 +135,11 @@
   \end{columns}
 \end{frame}
 
-\section{研究方法}
-
+\section{系统设计与实现}
+\subsection{需求分析}
 \begin{frame}
-  \frametitle{研究方法}
-  \begin{block}{方法一}
-    \begin{itemize}
-      \item abc
-      \item def
-    \end{itemize}
-  \end{block}
-  \pause
-  \begin{block}{方法二}
-    \begin{itemize}
-      \item abc
-      \item def
-    \end{itemize}
-  \end{block}
+  \frametitle{需求分析}
+  
 \end{frame}
 
 
